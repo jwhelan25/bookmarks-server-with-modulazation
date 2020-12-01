@@ -4,7 +4,7 @@ const { isWebUrl } = require('valid-url')
 const logger = require('../logger')
 const store = require('../store')
 
-const bookmarksRouter = express.Router()
+const bookmarkRouter = express.Router()
 const bodyParser = express.json()
 
 bookmarkRouter
@@ -73,4 +73,4 @@ bookmarkRouter
       .end()
   })
 
-module.exports = bookmarksRouter
+module.exports = bookmarkRouter
